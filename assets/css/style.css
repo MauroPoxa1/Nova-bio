@@ -18,19 +18,25 @@ button {
     font-size: 22px;
 }
 p {
-    font-size: 18px;
+    font-size: 16px;
+    margin: 10px 0;
 }
 .banner {
     display: grid;
     justify-content: center;
     width: auto;
 }
-.imagem-banner {
+.imagem-banner-box {
     width: 359.9px;
     max-height: 205px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    overflow-y: auto;
+    overflow-y: hidden;
+    scroll-snap-stop: -100px;
+}
+.imagem-banner{
+    display: block;
+    width: 100%;
 }
 .imagem-perfil {
     display: grid;
@@ -41,7 +47,7 @@ p {
     width: 95px;
     border-radius:50%;
     border:2px solid #ffffff91;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 .menu {
     display: flex;
@@ -68,6 +74,20 @@ p {
     padding: 8px 17px;
     margin: -2px -2px;
     transition: 0.51s;
+}
+.bio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 25px;
+    max-height: 100px;
+}
+.bio-texto{
+    max-width: 450px;
+    color: #fff;
+    padding: 15px 10px;
+    margin-top: -50px;
+    text-align: center;
 }
 .btn {
     display: grid;
@@ -152,24 +172,27 @@ body > main > section.btn > a:nth-child(5) > .btn__botao:hover{
     .banner {
         width: 100%;
        }
-       .imagem-banner {
+       .imagem-banner-box {
         width: 366.1px;
     }
 }
 
 @media screen and (min-width:540px) {
-    .imagem-banner {
+    .imagem-banner-box {
         width: 542px;
+    }
+    .imagem-banner{
+        margin: -120px 0;
     }
 }
 
 @media screen and (min-width:600px) {
-    .imagem-banner {
+    .imagem-banner-box {
         width: 695px;
     }
 }
 @media screen and (min-width:800px) {
-    .imagem-banner {
+    .imagem-banner-box {
         width: 750px;
     }
     .imagem-perfil-img {
@@ -180,24 +203,25 @@ body > main > section.btn > a:nth-child(5) > .btn__botao:hover{
         justify-content: center;
         margin-top: -90px;
     }
+    .imagem-banner{
+        margin: -110px 0;
+    }
 }
 
 @media screen and (min-width:1245px) {
-    .imagem-banner {
+    .imagem-banner-box {
         width: 820px;
         min-height: 210px;
     }
 }
-
-
 @media screen and (min-width:1545px) {
-    .imagem-banner {
+    .imagem-banner-box {
       width: 1200px;
       min-height: 350px;
     }
 }
 @media screen and (min-width:2545px) {
-    .imagem-banner {
+    .imagem-banner-box {
       width: 1600px;
       min-height: 450px;
     }
