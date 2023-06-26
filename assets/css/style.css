@@ -1,0 +1,204 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    gap:10px;
+    font-weight: 400;
+    font-family:  'Montserrat', sans-serif;
+    height: 100vh;
+    background: linear-gradient(338deg, rgba(26,14,227,1) 0%, rgba(8,204,195,1) 46%, rgba(65,11,230,0.958420868347339));
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+}
+button {
+    font-size: 22px;
+}
+p {
+    font-size: 18px;
+}
+.banner {
+    display: grid;
+    justify-content: center;
+    width: auto;
+}
+.imagem-banner {
+    width: 359.9px;
+    max-height: 205px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow-y: auto;
+}
+.imagem-perfil {
+    display: grid;
+    justify-content: center;
+    margin-top: -60px;
+}
+.imagem-perfil-img {
+    width: 95px;
+    border-radius:50%;
+    border:2px solid #ffffff91;
+    overflow-y: auto;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    margin: -25px 0 15px 0;
+    
+}
+.menu-btn {
+    padding: 8px 15px;
+    border-radius: 6px;
+    border: none;
+    color:#fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    margin: 2px 0;
+    cursor: pointer;
+}
+.menu-btn:hover {
+    padding: 8px 17px;
+    margin: -2px -2px;
+    transition: 0.51s;
+}
+.btn {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.btn__botao {
+    width: 320px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 15px;
+    color:#000;
+    background: #fff;
+    border-color:transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-family:  'Montserrat', sans-serif;
+}
+body > main > section.btn > a:nth-child(2) > .btn__botao {
+    width: 310px;
+}
+body > main > section.btn > a:nth-child(2) > .btn__botao:hover{
+    width: 320px;
+}
+body > main > section.btn > a:nth-child(3) > .btn__botao {
+    width: 300px;
+}
+body > main > section.btn > a:nth-child(3) > .btn__botao:hover{
+    width: 320px;
+}
+body > main > section.btn > a:nth-child(4) > .btn__botao {
+    width: 290px;
+}
+body > main > section.btn > a:nth-child(4) > .btn__botao:hover{
+    width: 320px;
+}
+body > main > section.btn > a:nth-child(5) > .btn__botao {
+    width: 280px;
+}
+body > main > section.btn > a:nth-child(5) > .btn__botao:hover{
+    width: 320px;
+}
+.btn__botao:hover {
+    font-size: 22px;
+    margin: -1.21px 0;
+    width: 330px;
+    transition: 0.21s;
+}
+
+
+
+.botao-inst{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.botao-tik {
+    background: radial-gradient(circle, rgba(50,3,3,1) 0%, rgba(0,0,0,1) 100%);
+
+}
+.botao-you{
+    background:#F70000;
+}
+
+.btn__botao {
+    box-shadow:rgb(16, 195, 239) 0px 0px 5px 0px;
+}
+.btn__botao:hover{
+    /*border-color: #F70000;*/
+    box-shadow:rgb(13, 49, 211) 0px 0px 5px 0px;
+}
+
+
+.ico{
+    width: 25px;
+    margin-bottom: -6px;
+}
+.btn__botao:hover > .ico {
+    width: 28px;
+    transition: 0.21s;
+}
+@media screen and (min-width:365px) {
+    .banner {
+        width: 100%;
+       }
+       .imagem-banner {
+        width: 366.1px;
+    }
+}
+
+@media screen and (min-width:540px) {
+    .imagem-banner {
+        width: 542px;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .imagem-banner {
+        width: 695px;
+    }
+}
+@media screen and (min-width:800px) {
+    .imagem-banner {
+        width: 750px;
+    }
+    .imagem-perfil-img {
+        width: 120px;
+    }
+    .imagem-perfil {
+        display: grid;
+        justify-content: center;
+        margin-top: -90px;
+    }
+}
+
+@media screen and (min-width:1245px) {
+    .imagem-banner {
+        width: 820px;
+        min-height: 210px;
+    }
+}
+
+
+@media screen and (min-width:1545px) {
+    .imagem-banner {
+      width: 1200px;
+      min-height: 350px;
+    }
+}
+@media screen and (min-width:2545px) {
+    .imagem-banner {
+      width: 1600px;
+      min-height: 450px;
+    }
+}
